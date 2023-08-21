@@ -8,12 +8,13 @@
 body {
         height: 100vh;
         box-sizing: border-box;
-        background-color: rgb(0, 0, 0);
-        color: white;
+        background-color: black;
+        color: rgb(255, 255, 255);
 }
 
 .titulo-destaque {
-        color:#22d4fd;
+        color: #ff0000;
+        
 }
 
 .conteudo {
@@ -25,48 +26,40 @@ body {
 
 .apresentacao-conteudo {
         width: 615px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
 }
 
 .apresentacao-conteudo-titulo {
-        font-size: 46px;
+        font-size: 36px;
         font-family: 'Krona One', 'sans-serif';
 }
- .apresentacao-conteudo-paragrafo {  
-       font-size: 36px;
-       font-family: "Montserrat", sans-serif;
- }
 
-
-      .apresentacao-links {
-               display:flex;
-               justify-content: space-between;
- }
-
- .botao {
-    background-color: #04b0ff;    
-         color: #fff;      
-            width: 280px;     
-                text-align: center;       
-                  border-radius: 16px;    
-                       font-size: 24px;    
-                            padding: 21.5px 0;      
-                               text-decoration: none;  
-                                      font-family: 'Montserrat', sans-serif; 
-                                              border: none;    
-                                                   cursor: pointer;   
-                                                         transition: background-color 0.3s ease, box-shadow 0.3s ease;
+.apresentacao-conteudo-paragrafo {
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;    
 }
 
-/* Adicione regras de mídia para ajustar o tamanho do botão em telas menores */
-@media (max-width: 768px) {
-  .botao {
-    font-size: 4vw; /* Tamanho da fonte para telas menores */
-    padding: 2% 0; /* Padding para telas menores */
-  }
+.apresentacao-links {
+        display:flex;
+        justify-content: space-between;
 }
-.imagem{
-       max-width: 100%;
-       width: auto;
-       margin-left: 30px;
-       margin-right: 30px;
-    }
+
+.botao {
+        background-color: #ff0000;
+        color: rgb(0, 0, 0);
+        width: 400px;
+        text-align: center;
+        border-radius: 25px;
+        font-size: 40px;
+        padding: 20px 0;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif; 
+        margin: 30px;
+}
+
+.imagem {
+        max-width: 30%;
+        width: auto;
+}
